@@ -1,0 +1,27 @@
+{
+  "name": "porfolio-electron",
+  "version": "1.0.0",
+  "description": "portfolio projects",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolyaganzin/portfolioElectron.git"
+  },
+  "keywords": [
+    "portfolio",
+    "electron",
+    "angular-material"
+  ],
+  "author": "tolyaganzin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tolyaganzin/portfolioElectron/issues"
+  },
+  "homepage": "https://github.com/tolyaganzin/portfolioElectron#readme",
+  "devDependencies": {
+    "electron": "^1.4.14"
+  }
+}
