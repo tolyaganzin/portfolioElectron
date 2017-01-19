@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="YourApp">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
     <title>portfolio electron</title>
   </head>
   <body>
-    <h1>portfolio hello!</h1>
+
+    <h1>Portfolio hello!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script>
+        // Include app dependency on ngMaterial
+        angular.module( 'YourApp', [ 'ngMaterial' ] );
+    </script>
+
   </body>
 </html>
