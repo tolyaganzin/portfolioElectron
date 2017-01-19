@@ -30,8 +30,12 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
 
   $urlRouterProvider.otherwise('/main');
   $stateProvider
-    .state('main',{
+    .state('main', {
       url: '/main',
-      template: 'main state'
+      template: 'Main state. <a ui-sref="me">Click on this text to go to the "me" state!</a>'
+    })
+    .state('me',{
+      url: '/me',
+      template: 'My profile state. Click on Portfolio toolbar text to go "main" state!'
     });
 }
