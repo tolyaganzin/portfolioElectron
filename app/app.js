@@ -6,7 +6,7 @@ angular
   //run app
   angular
     .module('app')
-    .run(runApplication);
+      .run(runApplication);
 
   runApplication.$inject = ['$stateParams', '$rootScope', '$state'];
 
