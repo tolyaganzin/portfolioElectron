@@ -28,14 +28,33 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
 
 
 
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/enter');
   $stateProvider
+    .state('enter', {
+      url: '/enter',
+      controller: 'enterController'
+    })
     .state('main', {
-      url: '/main',
-      template: 'Main state. <a ui-sref="me">Click on this text to go to the "me" state!</a>'
+      url:      '/main',
+      abstract: true,
+      templateUrl: 'app/views/mainToolbarView.html'
+    })
+    .state('start', {
+      url:    '/start',
+      parent: 'main',
+      views: {
+        'content@main': {
+          templateUrl:  'app/views/mainContentView.html'
+        }
+      }
     })
     .state('me',{
-      url: '/me',
-      template: 'My profile state. Click on Portfolio toolbar text to go "main" state!'
+      url:    '/me',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template: 'My profile state. Click on Portfolio toolbar text to go "main" state!'
+        }
+      }
     });
 }
