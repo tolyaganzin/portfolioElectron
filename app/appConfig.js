@@ -37,7 +37,9 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
     .state('main', {
       url:      '/main',
       abstract: true,
-      templateUrl: 'app/views/mainToolbarView.html'
+      templateUrl: 'app/views/mainToolbarView.html',
+      controller: "mainController",
+      controllerAs: "main"
     })
     .state('start', {
       url:    '/start',

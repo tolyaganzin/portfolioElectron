@@ -1,3 +1,6 @@
 .inherit {
   height: inherit;
 }
+.heightContent {
+  height: calc(100% - 64px);
+}

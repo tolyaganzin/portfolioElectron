@@ -5,10 +5,17 @@
     </h2>
     <span flex></span>
 
-    <md-button class="md-icon-button" aria-label="More">
+    <md-button class="md-icon-button" ng-click="main.toggleLeft()" aria-label="More">
       <md-icon class="material-icons">more_vert</md-icon>
     </md-button>
   </div>
 </md-toolbar>
-
-<div ui-view="content"></div>
+<md-content class="heightContent" layout="row">
+  <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left" flex>
+    <md-content>
+      <h2>dsklfks</h2>
+      <h3>dsfjkd</h3>
+    </md-content>
+  </md-sidenav>
+  <div ui-view="content" flex></div>
+</md-content>
