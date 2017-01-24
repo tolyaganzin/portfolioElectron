@@ -39,12 +39,66 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       controller: "mainController",
       controllerAs: "main"
     })
-    .state('start', {
-      url:    '/start',
+    .state('about-me', {
+      url:    '/about-me',
       parent: 'main',
       views: {
         'content@main': {
           templateUrl:  'app/views/mainContentView.html'
+        }
+      }
+    })
+    .state('mwo', {
+      url:    '/mwo',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'MWO Bugtracker'
+        }
+      }
+    })
+    .state('yii2', {
+      url:    '/yii2',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'Yii2 Angular'
+        }
+      }
+    })
+    .state('teamgeist', {
+      url:    '/teamgeist',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'Tteamgeist'
+        }
+      }
+    })
+    .state('angular-material', {
+      url:    '/angular-material',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'Angular-material'
+        }
+      }
+    })
+    .state('angular-ui-router', {
+      url:    '/angular-ui-router',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'Angular ui-router'
+        }
+      }
+    })
+    .state('angular-express', {
+      url:    '/angular-express',
+      parent: 'main',
+      views: {
+        'content@main': {
+          template:  'Angular Express'
         }
       }
     })

@@ -5,5 +5,5 @@ angular
   enterController.$ingect = ['$state'];
 
   function enterController($state) {
-    $state.go('start');
+    $state.go('about-me');
   }
