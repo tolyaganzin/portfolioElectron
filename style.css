@@ -4,3 +4,6 @@
 .heightContent {
   height: calc(100% - 64px);
 }
+.unOverflow {
+  overflow: hidden;
+}
