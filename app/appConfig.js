@@ -26,8 +26,6 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
     });
 
 
-
-
   $urlRouterProvider.otherwise('/enter');
   $stateProvider
     .state('enter', {

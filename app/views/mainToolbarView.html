@@ -1,20 +1,62 @@
 <md-toolbar md-theme="myTheme">
   <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
-    <h2 ui-sref="start">
-      <span>Portfolio toolbar</span>
-    </h2>
+    <md-list>
+      <md-list-item class="noright" ui-sref="start">
+        <img alt="logo" ng-src="logo.png" class="md-avatar" />
+        <p>Ganzin Anatoly</p>
+      </md-list-item>
+    </md-list>
 
     <md-button class="md-icon-button" ng-click="main.toggleLeft()" ng-if="!main.showAndHide" aria-label="More">
       <md-icon class="material-icons">more_vert</md-icon>
     </md-button>
   </div>
 </md-toolbar>
+
 <md-content class="heightContent" layout="row">
   <md-sidenav md-is-locked-open="main.showAndHide" md-component-id="left" flex>
     <md-content>
-      <h2>dsklfks</h2>
-      <h3>dsfjkd</h3>
+      <md-list>
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>About me</p>
+        </md-list-item>
+
+        <md-divider></md-divider>
+        <md-subheader class="md-no-sticky">My best projects</md-subheader>
+
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>MWO Bugtracker (Codeigniter)</p>
+        </md-list-item>
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>Yii2 Angular (REST API)</p>
+        </md-list-item>
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>Teamgeist (Express, Electron)</p>
+        </md-list-item>
+
+        <md-divider></md-divider>
+        <md-subheader class="md-no-sticky">My first apps with angular</md-subheader>
+
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>Angular-material</p>
+        </md-list-item>
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>Angular ui-router</p>
+        </md-list-item>
+        <md-list-item class="noright" ui-sref="start">
+          <img alt="logo" ng-src="logo.png" class="md-avatar" />
+          <p>Angular Express</p>
+        </md-list-item>
+
+      </md-list>
     </md-content>
   </md-sidenav>
+
   <div ui-view="content" flex></div>
 </md-content>
