@@ -53,7 +53,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'MWO Bugtracker'
+          templateUrl:  'app/views/best_projects/mwoView.html'
         }
       }
     })
@@ -62,7 +62,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'Yii2 Angular'
+          templateUrl:  'app/views/best_projects/yii2View.html'
         }
       }
     })
@@ -71,7 +71,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'Tteamgeist'
+          templateUrl:  'app/views/best_projects/teamgeistView.html'
         }
       }
     })
@@ -80,7 +80,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'Angular-material'
+          templateUrl:  'app/views/first_apps/angularMaterialView.html'
         }
       }
     })
@@ -89,7 +89,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'Angular ui-router'
+          templateUrl:  'app/views/first_apps/angularUiRouterView.html'
         }
       }
     })
@@ -98,7 +98,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          template:  'Angular Express'
+          templateUrl:  'app/views/first_apps/angularExpressView.html'
         }
       }
     })
