@@ -44,7 +44,7 @@ function configApplication($stateProvider, $urlRouterProvider, $httpProvider, $m
       parent: 'main',
       views: {
         'content@main': {
-          templateUrl:  'app/views/mainContentView.html'
+          templateUrl:  'app/views/aboutMeView.html'
         }
       }
     })
