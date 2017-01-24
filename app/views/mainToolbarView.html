@@ -16,7 +16,7 @@
 <div class="heightContent" layout="row">
   <md-sidenav md-is-locked-open="main.showAndHide" md-component-id="left" flex>
     <md-list>
-      <md-list-item class="noright" ui-sref="about-me">
+      <md-list-item class="noright" ui-sref="about-me" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <p>About me</p>
         <md-divider></md-divider>
@@ -24,21 +24,21 @@
 
       <md-subheader class="md-no-sticky">My best projects</md-subheader>
 
-      <md-list-item class="md-2-line" ui-sref="mwo">
+      <md-list-item class="md-2-line" ui-sref="mwo" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <div class="md-list-item-text">
           <h3>MWO Bugtracker</h3>
           <p>Codeigniter</p>
         </div>
       </md-list-item>
-      <md-list-item class="md-2-line" ui-sref="yii2">
+      <md-list-item class="md-2-line" ui-sref="yii2" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <div class="md-list-item-text">
           <h3>Yii2 Angular</h3>
           <p>REST Full API</p>
         </div>
       </md-list-item>
-      <md-list-item class="md-2-line" ui-sref="teamgeist">
+      <md-list-item class="md-2-line" ui-sref="teamgeist" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <div class="md-list-item-text">
           <h3>Teamgeist</h3>
@@ -49,15 +49,15 @@
       <md-divider></md-divider>
       <md-subheader class="md-no-sticky">My first apps with angular</md-subheader>
 
-      <md-list-item class="noright" ui-sref="angular-material">
+      <md-list-item class="noright" ui-sref="angular-material" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <p>Angular-material</p>
       </md-list-item>
-      <md-list-item class="noright" ui-sref="angular-ui-router">
+      <md-list-item class="noright" ui-sref="angular-ui-router" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <p>Angular ui-router</p>
       </md-list-item>
-      <md-list-item class="noright" ui-sref="angular-express">
+      <md-list-item class="noright" ui-sref="angular-express" ng-click="main.toggleLeft()">
         <img alt="logo" ng-src="logo.png" class="md-avatar" />
         <p>Angular Express</p>
       </md-list-item>
