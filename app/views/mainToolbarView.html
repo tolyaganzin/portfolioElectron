@@ -7,6 +7,8 @@
       </md-list-item>
     </md-list>
 
+    <p hide show-gt-sm>Develop and test apps: WEB, Desktop, API</p>
+
     <md-button class="md-icon-button" ng-click="main.toggleLeft()" ng-if="!main.showAndHide" aria-label="More">
       <md-icon class="material-icons">more_vert</md-icon>
     </md-button>
@@ -65,5 +67,5 @@
     </md-list>
   </md-sidenav>
 
-    <md-content flex layout-padding ui-view="content" flex></md-content>
+    <md-content flex layout="column" ui-view="content"></md-content>
 </div>

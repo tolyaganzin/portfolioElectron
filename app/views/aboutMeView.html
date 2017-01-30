@@ -1,149 +1,139 @@
-<!-- <h1>Portfolio hello!</h1>
-We are using node <script>document.write(process.versions.node)</script>,
-Chrome <script>document.write(process.versions.chrome)</script>,
-and Electron <script>document.write(process.versions.electron)</script>.
-<p>
-  Main state. <a ui-sref="me">Click on this text to go to the "me" state!</a>
-</p> -->
-<md-content class="md-padding" layout="column">
-  <md-card>
-    <div layout="row">
-      <img src="logo.png" flex-md="50" flex style="max-height: 500px;">
-      <div layout="column" flex>
-        <md-card-header>
-          <md-card-header-text>
-            <span class="md-title">Ganzin Anatoly</span>
-            <span class="md-subhead">Develop and test apps: WEB, Desktop, API</span>
-          </md-card-header-text>
-        </md-card-header>
-        <md-card-content>
-          <md-list>
+<md-card>
 
-            <md-subheader>Study</md-subheader>
-            <md-list-item class="md-2-line">
-              <div class="md-list-item-text">
-                <h3>Школа</h3>
-                <p>Запорізький навчально-виховний комплекс № 109 <a href="http://znvk109.ucoz.ua" target="_blank" alt="more"><md-icon class="material-icons">more</md-icon></a></p>
-              </div>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="md-3-line">
-              <div class="md-list-item-text">
-                <h3>Университеты</h3>
-                <h4>КА Шаг ЕКО <a href="https://itstep.zp.ua" target="_blank" alt="more"><md-icon class="material-icons">expand_more</md-icon></a></h4>
-                <p>ВМУРоЛ " Україна" <a href="http://mmirl.edu.ua/typography/istoriya-stvorennya" target="_blank" alt="more"><md-icon class="material-icons">expand_more</md-icon></a></p>
-              </div>
-            </md-list-item>
+  <p hide-gt-sm layout="row" layout-align="space-around">Develop and test apps: WEB, Desktop, API</p>
+  <md-card-content layout="row" layout-align="space-around">
+    <img src="img/1.jpg" flex hide-xs>
 
-            <md-subheader>Специализация</md-subheader>
-            <md-list-item class="md-3-line">
-              <div class="md-list-item-text">
-                <h3>Программист</h3>
-                <h4>Экономическая кибернетика</h4>
-                <p>Бухгалтерский учет и ведение предприятия</p>
-              </div>
-            </md-list-item>
+    <div flex layout="column">
 
+      <md-toolbar md-theme="myTheme" layout="row" class="md-hue-3">
+        <div class="md-toolbar-tools">
+          <p>Skils</p>
+        </div>
+      </md-toolbar>
+      <md-content>
+        <md-list>
 
-            <md-toolbar md-theme="myTheme" layout="row" class="md-hue-3">
-              <div class="md-toolbar-tools">
-                <span>Skils</span>
-              </div>
-            </md-toolbar>
+          <md-subheader class="md-primary">Study</md-subheader>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <h3>School</h3>
+              <p>Zaporizhzhian state educational complex №109 <a href="http://znvk109.ucoz.ua" target="_blank" alt="more"><md-icon class="material-icons">more</md-icon></a></p>
+            </div>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="md-3-line">
+            <div class="md-list-item-text">
+              <h3>University</h3>
+              <h4>IT Step "European computer education" <a href="https://itstep.zp.ua" target="_blank" alt="more"><md-icon class="material-icons">more</md-icon></a></h4>
+              <p>Mykolaiv interregional university of people development <a href="http://mmirl.edu.ua/typography/istoriya-stvorennya" target="_blank" alt="more"><md-icon class="material-icons">more</md-icon></a></p>
+            </div>
+          </md-list-item>
 
-            <md-subheader>Programin languages</md-subheader>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Java-script</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>PHP</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>C#</p>
-            </md-list-item>
+          <md-subheader class="md-warn">Specialization</md-subheader>
+          <md-list-item class="md-3-line">
+            <div class="md-list-item-text">
+              <h3>Developer</h3>
+              <h4>Economical cybernetics</h4>
+              <p>Accounting and management of enterprise</p>
+            </div>
+          </md-list-item>
 
-            <md-subheader>Databases</md-subheader>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>MySQL</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Mongo</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>MsSQL</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Acces</p>
-            </md-list-item>
+          <md-subheader class="md-accent">
+            Programin languages
+          </md-subheader>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Java-script</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>PHP</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>C#</p>
+          </md-list-item>
 
-            <md-subheader>Frontend</md-subheader>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Html 5</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>CSS 3</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Bootstrap 3</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Angular Material</p>
-            </md-list-item>
+          <md-subheader class="md-accent">Databases</md-subheader>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>MySQL</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Mongo</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>MsSQL</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Acces</p>
+          </md-list-item>
 
-            <md-subheader>Backend</md-subheader>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Yii2</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Node JS (Express)</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Codeigniter</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Microsoft.Net</p>
-            </md-list-item>
+          <md-subheader>Frontend</md-subheader>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Html 5</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>CSS 3</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Bootstrap 3</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Angular Material</p>
+          </md-list-item>
 
-            <md-subheader>Desktop</md-subheader>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>Electron</p>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="noright" ui-sref="about-me">
-              <img alt="logo" ng-src="logo.png" class="md-avatar" />
-              <p>WPF</p>
-            </md-list-item>
+          <md-subheader>Backend</md-subheader>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Yii2</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Node JS (Express)</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Codeigniter</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Microsoft.Net</p>
+          </md-list-item>
 
-          </md-list>
-        </md-card-content>
-      </div>
+          <md-subheader>Desktop</md-subheader>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>Electron</p>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item class="noright" ui-sref="about-me">
+            <img alt="logo" ng-src="logo.png" class="md-avatar" />
+            <p>WPF</p>
+          </md-list-item>
+
+        </md-list>
+        <md-content>
+
     </div>
-  </md-card>
-</md-content>
+  </md-card-content>
+</md-card>

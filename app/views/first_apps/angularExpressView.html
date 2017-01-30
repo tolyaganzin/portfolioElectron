@@ -1,26 +1,21 @@
-<md-content class="md-padding" layout="column">
-  <md-card>
-    <md-card-header>
-     <md-card-avatar>
-       <img src="logo.png"/>
-     </md-card-avatar>
-     <md-card-header-text>
-       <span class="md-title">Angular and Express</span>
-       <span class="md-subhead">Angular v1.5.8, Bootstrap v3, Express, Mongo DB</span>
-     </md-card-header-text>
-    </md-card-header>
-    <md-card-content>
+<md-card>
+  <md-content layout="column">
+    <md-list-item class="md-2-line">
+      <img class="md-avatar" src="logo.png"/>
+      <div class="md-list-item-text">
+        <h3>Angular and Express</h3>
+        <p>Angular v1.5.8, Bootstrap v3, Express, Mongo DB</p>
+      </div>
+    </md-list-item>
+
+    <div layout-padding>
       <p>
-        The first app with angular JS, mongo db and express.
-        Всего 3 представления: главная страница, форма для отправки контакта (в форме присутствует самописная директива для динамического добавления номеров) и табличное представление отправленных контактов.
-        Контакты сохраняються в монге (колекции контактов).
+        It was the first app. of mine on Angular, MongoDB and Express. There are main page, dispatch form and the table view of contacts which were sent (i.e. contact list). The form includes custom written directive for adding numbers dynamically.
       </p>
-    </md-card-content>
-    <md-card-title>
-      <md-card-title-text>
-        <span class="md-headline">Screens project</span>
-      </md-card-title-text>
-    </md-card-title>
+
+      <h3>Screens project</h3>
+    </div>
+
     <md-card-content><p>Main page</p></md-card-content>
     <img ng-src="img/Screenshot_0.png" class="md-card-image" alt="Washed Out">
     <md-card-content><p>Add contacts</p></md-card-content>
@@ -29,5 +24,5 @@
     <img ng-src="img/Screenshot_2.png" class="md-card-image" alt="Washed Out">
     <md-card-content><p>Contacts table (collection)</p></md-card-content>
     <img ng-src="img/Screenshot_3.png" class="md-card-image" alt="Washed Out">
-  </md-card>
-</md-content>
+  </md-content>
+</md-card>
